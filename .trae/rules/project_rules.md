@@ -1,1 +1,0 @@
-1. 这是一个VuePress Theme Hope项目 并详细阅读https://theme-hope.vuejs.press/zh/guide/ 官方文档
