@@ -13,7 +13,7 @@ export default hopeTheme({
 
   logo: "/logo.png",
 
-  repo: "GSManagerXZ/Docs",
+  repo: "SClipBoard/Docs",
 
   docsDir: "src",
 
