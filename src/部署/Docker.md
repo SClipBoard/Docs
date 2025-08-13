@@ -40,7 +40,7 @@ services:
       mysql:
         condition: service_healthy
     volumes:
-      - ./uploads:/app/uploads
+      - ./uploads:/app/dist/uploads
       - ./logs:/app/logs
     restart: unless-stopped
 
@@ -53,7 +53,7 @@ services:
       - MYSQL_USER=clipboard_user
       - MYSQL_PASSWORD=clipboard_password
     ports:
-      - "127.0.0.1:3306:3306"
+      - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
       - ./migrations:/docker-entrypoint-initdb.d
@@ -65,6 +65,7 @@ services:
 
 volumes:
   mysql_data:
+
 ```
 
 ::: info 镜像说明
