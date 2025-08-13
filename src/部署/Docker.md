@@ -32,10 +32,6 @@ services:
       - LOG_LEVEL=info
       - LOG_FILE=logs/app.log
       - UPLOAD_DIR=uploads
-      - MAX_FILE_SIZE=10485760
-      - AUTO_CLEANUP_ENABLED=true
-      - AUTO_CLEANUP_DAYS=30
-      - MAX_ITEMS_PER_DEVICE=1000
     depends_on:
       mysql:
         condition: service_healthy
